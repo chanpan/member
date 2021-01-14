@@ -16,25 +16,35 @@
     }
 ?>
 
-<div>
-    <div>
-        <img src="./image/<?= $image;?>" style='width:100px'>
-    </div>
-    <div>
-        <a href="editprofile.php?id=<?= $row['id'];?>">แก้ไขโปรไฟล์ </a> | 
-        <a href="changepassword.php?id=<?= $row['id'];?>">เปลี่ยนรหัสผ่าน </a> |
-        <a href="logout.php">ออกจากระบบ </a>
-    </div>
-    <div>
-        <label>ชื่อผู้ใช้งาน:  <?= $row['username'];?></label>
-    </div>
-    <div>
-        <label>ชื่อนามสกุล:  <?= $row['name'];?></label>
-    </div>
-    <div>
-        <label> เบอร์โทรศัพท์:  <?= $row['tel'];?></label>
-    </div>
-    <div>
-        <label> ที่อยู่:  <?= $row['address'];?></label>
-    </div>
-</div> 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id='myProfile'>
+            <div id="profileImage">
+                <img src="./image/<?= $image;?>">
+            </div>
+            <div id='profileText'>
+                <div>
+                    <div id='profileName'><?= $row['name'];?></div>
+                    <div>
+                        <label> เบอร์โทรศัพท์:  <?= $row['tel'];?></label>
+                    </div>
+                    <div>
+                        <label> ที่อยู่:  <?= $row['address'];?></label>
+                    </div>
+                </div>
+                <div><br>
+                    <a href="editprofile.php?id=<?= $row['id'];?>">แก้ไขโปรไฟล์ </a> | 
+                    <a href="changepassword.php?id=<?= $row['id'];?>">เปลี่ยนรหัสผ่าน </a> |
+                    <a href="logout.php">ออกจากระบบ </a>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>

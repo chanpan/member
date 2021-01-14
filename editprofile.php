@@ -43,25 +43,37 @@
     
     $mysqli->close();
 ?>
-<form action="editprofile.php" method='post' enctype="multipart/form-data">
-    <img src="./image/<?= $image; ?>" style='width:100px'>
-    <div>
-        <label>รูปโปรไฟล์</label>
-        <input type="file" name='image1'>
-    </div>
-    <div>
-        <label>ชื่อนามสกุล</label>
-        <input type="text" name='name' value='<?= $row['name']?>'>
-    </div>
-    <div>
-        <label>ที่อยู่</label>
-        <input type="text" name='address' value='<?= $row['address']?>'>
-    </div>
-    <div>
-        <label>เบอร์โทรศัพท์</label>
-        <input type="text" name='tel' value='<?= $row['tel']?>'>
-    </div>
-    <div>
-        <button type='submit'>ยืนยัน</button>
-    </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Edit Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <form action="editprofile.php" method='post' enctype="multipart/form-data" id='editProfile'>
+        <img src="./image/<?= $image; ?>" style='width:100px'>
+        <div>
+            <label>รูปโปรไฟล์</label>
+            <input type="file" name='image1'>
+        </div>
+        <div>
+            <label>ชื่อนามสกุล</label>
+            <input type="text" name='name' value='<?= $row['name']?>'>
+        </div>
+        <div>
+            <label>ที่อยู่</label>
+            <input type="text" name='address' value='<?= $row['address']?>'>
+        </div>
+        <div>
+            <label>เบอร์โทรศัพท์</label>
+            <input type="text" name='tel' value='<?= $row['tel']?>'>
+        </div>
+        <div>
+            <button type='submit' id='btnSuccess'>ยืนยัน</button>
+            <p><a href="profile.php" >ยกเลิก</a></p>
+        </div>
+    </form>
+    </body>
+</html>

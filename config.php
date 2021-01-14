@@ -2,8 +2,8 @@
 
 $serverName = 'localhost';
 $username = 'root';
-$password = '123456';
-$dbName = 'members';
+$password = '';
+$dbName = 'profile';
 $mysqli = new mysqli($serverName,$username,$password,$dbName);
 
 // Check connection
