@@ -60,15 +60,15 @@
         </div>
         <div>
             <label>ชื่อนามสกุล</label>
-            <input type="text" name='name' value='<?= $row['name']?>'>
+            <input type="text" name='name' value='<?= $row['name']?>' placeholder='ชื่อนามสกุล'>
         </div>
         <div>
             <label>ที่อยู่</label>
-            <input type="text" name='address' value='<?= $row['address']?>'>
+            <input type="text" name='address' value='<?= $row['address']?>' placeholder='ที่อยู่'>
         </div>
         <div>
             <label>เบอร์โทรศัพท์</label>
-            <input type="text" name='tel' value='<?= $row['tel']?>'>
+            <input type="text" name='tel' value='<?= $row['tel']?>' placeholder='เบอร์โทรศัพท์'>
         </div>
         <div>
             <button type='submit' id='btnSuccess'>ยืนยัน</button>
