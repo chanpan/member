@@ -64,10 +64,10 @@
                 </div>
             <?php }?>
             <div>
-                <input type="email" name='email' placeholder='อีเมล' required>
+                <input type="email" name='email' placeholder='อีเมล' autocomplete="off" required>
             </div>
             <div>
-                <input type="text" name='username' placeholder='ชื่อผู้ใช้งาน' required>
+                <input type="text" name='username' placeholder='ชื่อผู้ใช้งาน' autocomplete="off" required>
             </div>
             <div>
                 <input type="password" name='password' placeholder='รหัสผ่าน' required>

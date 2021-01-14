@@ -39,7 +39,7 @@
                 </div>
             <?php }?>
             <div>
-                <input type="text" name='username' placeholder='ชื่อผู้ใช้งาน' required='xxx'>
+                <input type="text" name='username' placeholder='ชื่อผู้ใช้งาน' required autocomplete="off">
             </div>
             <div>
                 <input type="password" name='password' placeholder='รหัสผ่าน' required>
